@@ -1,9 +1,10 @@
-import type { Metadata } from "next";
 import "./globals.css";
 
+import type { Metadata } from "next";
+
 export const metadata: Metadata = {
-  title: "AgendaPlay - app",
-  description: "Plataforma de agendamento, produtos e gestão em tempo real.",
+  title: "Atende Play",
+  description: "Seu atendimento, no modo play.",
 };
 
 export default function RootLayout({
@@ -12,10 +13,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-BR" className="dark" suppressHydrationWarning>
-      <body className="min-h-dvh bg-black text-foreground antialiased">
-        {children}
-      </body>
+    <html lang="pt-BR">
+      <body className="min-h-screen text-white antialiased">{children}</body>
     </html>
   );
 }

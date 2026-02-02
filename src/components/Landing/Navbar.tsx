@@ -49,11 +49,7 @@ export default function Navbar() {
           </nav>
 
           {/* Actions */}
-          <div className="flex items-center gap-2">
-            <Button className="bg-purple-500 hover:bg-purple-600">
-              MEU PORTAL
-            </Button>
-          </div>
+          <div className="flex items-center gap-2"></div>
         </Container>
       </div>
     </header>

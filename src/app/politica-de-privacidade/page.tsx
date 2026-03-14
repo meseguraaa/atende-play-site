@@ -12,6 +12,8 @@ export const metadata = {
     "Política de Privacidade do AtendePlay. Entenda quais dados coletamos, como usamos e como protegemos suas informações.",
 };
 
+const LAST_UPDATED = "14 de março de 2026";
+
 const sections = [
   {
     number: "1",
@@ -30,7 +32,7 @@ const sections = [
     title: "Uso da câmera e arquivos",
     paragraphs: [
       "O AtendePlay não acessa a câmera de forma automática.",
-      "Caso o usuário opte por utilizar funcionalidades que envolvam o envio de imagens (como foto de perfil), o acesso à câmera ou à galeria será solicitado somente mediante autorização explícita do usuário, conforme exigido pelo sistema operacional Android.",
+      "Caso o usuário opte por utilizar funcionalidades que envolvam o envio de imagens, como foto de perfil, o acesso à câmera ou à galeria será solicitado somente mediante autorização explícita do usuário, conforme exigido pelo sistema operacional Android.",
       "As imagens não são utilizadas para fins de rastreamento ou publicidade.",
     ],
   },
@@ -56,7 +58,7 @@ const sections = [
     number: "5",
     title: "Compartilhamento com terceiros",
     paragraphs: [
-      "O aplicativo pode utilizar serviços de terceiros (como infraestrutura de servidores e serviços de análise) que seguem padrões adequados de segurança e privacidade.",
+      "O aplicativo pode utilizar serviços de terceiros, como infraestrutura de servidores e serviços de análise, que seguem padrões adequados de segurança e privacidade.",
     ],
   },
   {
@@ -154,6 +156,12 @@ export default function PoliticaDePrivacidadePage() {
           subtitle="O AtendePlay valoriza a privacidade dos seus usuários e está comprometido em proteger as informações pessoais coletadas por meio do aplicativo."
         />
 
+        <div className="mt-4">
+          <p className="text-sm font-medium text-white/55">
+            Última atualização: {LAST_UPDATED}
+          </p>
+        </div>
+
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {sections.slice(0, 4).map((s) => (
             <SectionCard
@@ -189,9 +197,7 @@ export default function PoliticaDePrivacidadePage() {
             </div>
             <p className="text-sm leading-relaxed text-white/65">
               Recomendamos revisar esta página periodicamente para acompanhar
-              atualizações. Se você quiser, posso adicionar também uma linha de
-              “Última atualização” automática via env/constante, do jeitinho que
-              as lojas gostam.
+              atualizações desta Política de Privacidade.
             </p>
           </Card>
         </div>

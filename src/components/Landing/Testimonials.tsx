@@ -9,12 +9,12 @@ const testimonials = [
     text: "Depois do AtendePlay, meus clientes agendam sozinhos e eu parei de perder tempo no WhatsApp. Hoje consigo atender mais e com a agenda organizada.",
     image: "/kleiton.jpg",
   },
-  {
+  /*{
     name: "Rosangela Araújo",
     role: "Beauty Academy",
     text: "Agora eu sei exatamente quanto entra, quanto pago de comissão e quanto sobra no mês. O AtendePlay me deu controle do meu negócio.",
     image: "/rosangela.jpg",
-  },
+  },*/
   {
     name: "Jeferson Celani",
     role: "Seu Figas",
@@ -33,7 +33,7 @@ export default function Testimonials() {
           subtitle="Ouça pessoas que otimizaram seus agendamentos e recuperaram seu tempo."
         />
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
           {testimonials.map((t) => (
             <Card key={t.name} className="p-6">
               <div className="flex items-center gap-3">

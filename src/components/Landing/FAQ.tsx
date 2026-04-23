@@ -48,10 +48,9 @@ export default function FAQ() {
   const left = faqs.slice(0, 3);
   const right = faqs.slice(3);
 
-  // ✅ Abre WhatsApp Web no desktop e o app no mobile automaticamente.
-  // Dica: pode trocar a mensagem do "text=" se quiser.
-  const WHATSAPP_LINK =
-    "https://wa.me/5511985970667?text=Ol%C3%A1!%20Quero%20conhecer%20o%20AtendePlay.";
+  const whatsappNumber = "5511985970667";
+  const whatsappMessage = "Olá! Quero conhecer o AtendePlay.";
+  const WHATSAPP_LINK = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section id="faq" className="relative pt-24 md:pt-28">

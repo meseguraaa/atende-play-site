@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Container } from "./UiBits";
 
-const WHATSAPP_LINK = "https://wa.me/SEUNUMEROAQUI";
+const whatsappNumber = "5511985970667";
+const whatsappMessage = "Olá! Quero conhecer o AtendePlay.";
+const WHATSAPP_LINK = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 
 export default function Navbar() {
   return (
